@@ -1,5 +1,7 @@
 #pragma once
 
+#include <math.h>
+
 typedef struct
 {
   float x;
@@ -7,3 +9,7 @@ typedef struct
 }Vetorf;
 
 void copiaVetorf(Vetorf* copia, Vetorf* original);
+
+void somaVetorf(Vetorf* soma, Vetorf* acrescimo);
+
+float norma(Vetorf* u, Vetorf* v);

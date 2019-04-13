@@ -11,3 +11,15 @@ Bola* insereBola(Bola* b, float raio, Vetorf* pos, Vetorf* vel)
 
   return novo;
 }
+
+void limpaBolas(Bola* b)
+{
+    Bola* aux = b;
+
+    while(b != NULL)
+    {
+        b = b->prox;
+        free(aux);
+        aux = b;
+    }
+}

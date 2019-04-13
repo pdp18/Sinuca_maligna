@@ -13,5 +13,14 @@
 1555174763 source:c:\users\eu\desktop\sinuca_maligna\vetores.c
 	"Vetores.h"
 
-1555174763 c:\users\eu\desktop\sinuca_maligna\vetores.h
+1555186239 c:\users\eu\desktop\sinuca_maligna\vetores.h
+	<math.h>
+
+1555185638 source:c:\users\eu\desktop\sinuca_maligna\bola.c
+	"Bola.h"
+
+1555186239 c:\users\eu\desktop\sinuca_maligna\bola.h
+	<stdlib.h>
+	<stdio.h>
+	"Vetores.h"
 

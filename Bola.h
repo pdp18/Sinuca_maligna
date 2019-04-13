@@ -15,3 +15,5 @@ typedef struct No
 }Bola;
 
 Bola* insereBola(Bola* b, float raio, Vetorf* pos, Vetorf* vel);
+
+void limpaBolas(Bola* b);

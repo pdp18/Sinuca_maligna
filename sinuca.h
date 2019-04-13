@@ -14,7 +14,7 @@ typedef struct No
   float raio;
   Vetorf vel;
   Vetorf pos;
-  
+
   struct No* prox;
 }Bola;
 
@@ -26,17 +26,19 @@ void copiaVetorf(Vetorf* copia, Vetorf* original)
 
 Bola* insereBola(Bola* b, float raio, Vetorf* vel, Vetorf* pos)
 {
-  if (bola == NULL)
+  if (b == NULL)
   {
     b = (Bola*) malloc(sizeof(Bola));
     b->raio = raio;
-    copiaVetorf(b->pos, pos);
-    copiaVetorf(b->vel, vel);
+    copiaVetorf(&(b->pos), &pos);
+    copiaVetorf(&(b->vel), &vel);
     b->prox = NULL;
   }
-  
+
   else
     b->prox = insereBola(b->prox, raio, vel, pos);
-  
+
   return b;
 }
+
+/* testando commits */

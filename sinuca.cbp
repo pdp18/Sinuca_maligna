@@ -31,13 +31,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Bola.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bola.h" />
+		<Unit filename="Vetores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Vetores.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="sinuca.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="sinuca.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

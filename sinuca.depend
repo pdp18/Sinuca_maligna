@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1555107981 source:c:\users\eu\desktop\sinuca_maligna\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1555107981 source:c:\users\eu\desktop\sinuca_maligna\sinuca.c
+	"sinuca.h"
+
+1555161629 c:\users\eu\desktop\sinuca_maligna\sinuca.h
+	<stdlib.h>
+	<stdio.h>
+
+1555174763 source:c:\users\eu\desktop\sinuca_maligna\vetores.c
+	"Vetores.h"
+
+1555174763 c:\users\eu\desktop\sinuca_maligna\vetores.h
+

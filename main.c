@@ -7,7 +7,7 @@ int main()
     float raio ;
     Vetorf vel;
     Bola* b = NULL;
-    b = insereBola()
+    b = insereBola();
     printf("Qual a quantidade de bolas ? ");
     scanf("%d",&n_bolas);
     while(n_bolas>0)
@@ -21,7 +21,6 @@ int main()
         velocidade=0;
         raio=0;
         n_bolas--;
-
     }
     return 0;
 }

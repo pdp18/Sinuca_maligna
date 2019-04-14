@@ -8,6 +8,12 @@ typedef struct
   float y;
 }Vetorf;
 
+typedef struct
+{
+  int x;
+  int y;
+}Vetori;
+
 void copiaVetorf(Vetorf* copia, Vetorf* original);
 
 void somaVetorf(Vetorf* soma, Vetorf* acrescimo);

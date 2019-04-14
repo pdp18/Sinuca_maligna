@@ -17,3 +17,7 @@ typedef struct No
 Bola* insereBola(Bola* b, float raio, Vetorf* pos, Vetorf* vel);
 
 void limpaBolas(Bola* b);
+
+//void colisaoParede(Bola* b, );
+
+Vetorf posicaoAleatoria(int raio, Vetori* limitex, Vetori* limitey);

@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1555107981 source:c:\users\eu\desktop\sinuca_maligna\main.c
+1555255443 source:c:\users\eu\desktop\sinuca_maligna\main.c
 	<stdio.h>
 	<stdlib.h>
+	"Bola.h"
 
 1555107981 source:c:\users\eu\desktop\sinuca_maligna\sinuca.c
 	"sinuca.h"
@@ -10,17 +11,18 @@
 	<stdlib.h>
 	<stdio.h>
 
-1555174763 source:c:\users\eu\desktop\sinuca_maligna\vetores.c
+1555255242 source:c:\users\eu\desktop\sinuca_maligna\vetores.c
 	"Vetores.h"
-
-1555186239 c:\users\eu\desktop\sinuca_maligna\vetores.h
 	<math.h>
 
-1555185638 source:c:\users\eu\desktop\sinuca_maligna\bola.c
-	"Bola.h"
+1555255732 c:\users\eu\desktop\sinuca_maligna\vetores.h
 
-1555186239 c:\users\eu\desktop\sinuca_maligna\bola.h
+1555255260 source:c:\users\eu\desktop\sinuca_maligna\bola.c
+	"Bola.h"
 	<stdlib.h>
 	<stdio.h>
+	<time.h>
+
+1555255259 c:\users\eu\desktop\sinuca_maligna\bola.h
 	"Vetores.h"
 

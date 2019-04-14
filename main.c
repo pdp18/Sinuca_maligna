@@ -1,29 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Bola.h"
+
 int main()
 {
-    int n_bolas,cont=0;
+    int n_bolas, i;
     float raio ;
-    Vetorf vel;
-    Vetorf pos;
+    Vetorf vel, pos;
+    Vetori limx, limy;
     Bola* b = NULL;
-    b = insereBola();
-    b = insereBola()
-    printf("Qual a quantidade de bolas ? ");
-    scanf("%d",&n_bolas);
-    printf("Qual o raio da bola N:%d ",cont);
-    scanf("%f",&raio);
-    printf("Qual o velocidade da bola N:%d ",cont);
-    scanf("%f%f",&vel.x,&vel.y);
-    while(n_bolas>cont)
+
+    limx.x = 0;
+    limx.y = 1024;
+
+    limy.x = 0;
+    limy.y = 720;
+
+    printf("Qual a quantidade de bolas? ");
+    scanf("%d", &n_bolas);
+
+    printf("Qual o raio das bolas? ");
+    scanf("%f", &raio);
+
+    printf("Qual o velocidade da bola em pixels? ");
+    scanf("%f%f", &vel.x, &vel.y);
+
+    for (i = 0; i < n_bolas; i++)
     {
-        b=insereBola(b,raio,&vel,&pos);
-        cont++;
-        b=insereBola(b,raio,&vel,);
-        velocidade=0;
-        raio=0;
-        n_bolas--;
+        pos = posicaoAleatoria(raio, &limx, &limy);
+        b = insereBola(b, raio, &vel, &pos);
     }
+
     return 0;
 }

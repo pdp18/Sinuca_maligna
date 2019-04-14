@@ -1,5 +1,7 @@
 #include "Vetores.h"
 
+#include <math.h>
+
 void copiaVetorf(Vetorf* copia, Vetorf* original)
 {
   copia->x = original->x;

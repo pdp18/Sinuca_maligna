@@ -1,5 +1,7 @@
 #include "Bola.h"
 
+#include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 
 /* Insere sempre no início */

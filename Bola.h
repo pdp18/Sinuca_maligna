@@ -1,8 +1,5 @@
 #pragma once
 
-#include <stdlib.h>
-#include <stdio.h>
-
 #include "Vetores.h"
 
 typedef struct No

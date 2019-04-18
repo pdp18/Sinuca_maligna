@@ -1,7 +1,10 @@
 # depslib dependency file v1.0
-1555544117 source:c:\users\eu\desktop\sinuca_maligna\main.c
-	<stdio.h>
+1555591005 source:c:\users\eu\desktop\sinuca_maligna\main.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
 	<stdlib.h>
+	<stdio.h>
 	"Bola.h"
 
 1555107981 source:c:\users\eu\desktop\sinuca_maligna\sinuca.c
@@ -11,19 +14,19 @@
 	<stdlib.h>
 	<stdio.h>
 
-1555255242 source:c:\users\eu\desktop\sinuca_maligna\vetores.c
+1555551355 source:c:\users\eu\desktop\sinuca_maligna\vetores.c
 	"Vetores.h"
 	<math.h>
 
-1555255758 c:\users\eu\desktop\sinuca_maligna\vetores.h
+1555551355 c:\users\eu\desktop\sinuca_maligna\vetores.h
 
-1555545772 source:c:\users\eu\desktop\sinuca_maligna\bola.c
+1555551499 source:c:\users\eu\desktop\sinuca_maligna\bola.c
 	"Bola.h"
 	<stdlib.h>
 	<stdio.h>
 	<time.h>
 
-1555544117 c:\users\eu\desktop\sinuca_maligna\bola.h
+1555551355 c:\users\eu\desktop\sinuca_maligna\bola.h
 	"Vetores.h"
 
 1555549614 source:c:\users\cleds\desktop\sinuca_maligna\bola.c

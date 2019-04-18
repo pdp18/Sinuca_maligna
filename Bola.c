@@ -40,3 +40,32 @@ Vetorf posicaoAleatoria(int raio, Vetori* limitex, Vetori* limitey)
     return novo;
 }
 
+void colisaoParede(Bola* b, Vetori* limhor, Vetori* limver)
+{
+    /* limhor = bordas horizontais */
+    /* limver = bordas verticais */
+
+    if ( (b->pos.x - b->raio) <= limhor->x ) //Se bate na esquerda
+    {
+        b->pos.x = (limhor->x + b->raio);
+        b->vel.x *= -1;
+    }
+
+    else if ( (b->pos.x + b->raio) >= limhor->y ) //Se bate na direita
+    {
+        b->pos.x = (limhor->y - b->raio);
+        b->vel.x *= -1;
+    }
+
+    if ( (b->pos.y - b->raio) <= limver->x ) //Se bate em baixo
+    {
+        b->pos.y = (limver->x + b->raio);
+        b->vel.y *= -1;
+    }
+
+    else if ( (b->pos.y + b->raio) >= limver->y ) //Se bate em cima
+    {
+        b->pos.y = (limver->y - b->raio);
+        b->vel.y *= -1;
+    }
+}

@@ -69,3 +69,14 @@ void colisaoParede(Bola* b, Vetori* limhor, Vetori* limver)
         b->vel.y *= -1;
     }
 }
+
+
+void bola_com_bola(Bola* A,Bola* B)
+{
+    ///float eixo_proj;
+    Vetorf distancia;
+    distancia.x = A->pos.x - B->pos.x;
+    distancia.y = A->pos.y - B->pos.y;
+    ///eixo_proj = norma(&distancia.x, &distancia.y);
+
+}

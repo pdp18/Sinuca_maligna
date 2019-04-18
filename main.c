@@ -95,7 +95,7 @@ int main()
             {
                 if (evento.timer.source == cronometro)
                 {
-
+                    /* OS CALCULOS DE COLISAO E DESLOCAMENTO FICAM AQUI */
 
                     draw = true;
                 }

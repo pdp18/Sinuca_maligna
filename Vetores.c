@@ -29,7 +29,7 @@ void multiplicaVetorf(Vetorf* vet, float escalar)
     vet->x*=escalar;
     vet->y*=escalar;
 }
-///nao termonei
+
 Vetorf projecao(Vetorf eixo, Vetorf* projetado)
 {
     multiplicaVetorf( &eixo, (produto_escalar(&eixo,projetado)/produto_escalar(&eixo,&eixo)) );

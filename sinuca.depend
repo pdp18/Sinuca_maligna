@@ -26,23 +26,26 @@
 1555544117 c:\users\eu\desktop\sinuca_maligna\bola.h
 	"Vetores.h"
 
-1555549614 source:c:\users\cleds\desktop\sinuca_maligna\bola.c
+1555591654 source:c:\users\cleds\desktop\sinuca_maligna\bola.c
 	"Bola.h"
 	<stdlib.h>
 	<stdio.h>
 	<time.h>
 
-1555547447 c:\users\cleds\desktop\sinuca_maligna\bola.h
+1555590174 c:\users\cleds\desktop\sinuca_maligna\bola.h
 	"Vetores.h"
 
-1555550904 c:\users\cleds\desktop\sinuca_maligna\vetores.h
+1555590046 c:\users\cleds\desktop\sinuca_maligna\vetores.h
 
-1555255801 source:c:\users\cleds\desktop\sinuca_maligna\main.c
-	<stdio.h>
+1555551979 source:c:\users\cleds\desktop\sinuca_maligna\main.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_primitives.h>
 	<stdlib.h>
+	<stdio.h>
 	"Bola.h"
 
-1555550869 source:c:\users\cleds\desktop\sinuca_maligna\vetores.c
+1555590046 source:c:\users\cleds\desktop\sinuca_maligna\vetores.c
 	"Vetores.h"
 	<math.h>
 

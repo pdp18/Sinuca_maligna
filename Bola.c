@@ -73,10 +73,14 @@ void colisaoParede(Bola* b, Vetori* limhor, Vetori* limver)
 
 void bola_com_bola(Bola* A,Bola* B)
 {
-    ///float eixo_proj;
-    Vetorf distancia;
-    distancia.x = A->pos.x - B->pos.x;
-    distancia.y = A->pos.y - B->pos.y;
-    ///eixo_proj = norma(&distancia.x, &distancia.y);
 
+    Vetorf eixo,proje_a,proje_b,aux;
+    eixo.x =  B->pos.x - A->pos.x;
+    eixo.y = B->pos.y - A->pos.y;
+    proje_a=projecao(eixo, &(A->vel));
+    proje_b=projecao(eixo,&(B->vel));
+    ///talvez o erro esteja aqui
+   A->vel=proje_b;
+   B->vel=proje_a;
+    ///
 }

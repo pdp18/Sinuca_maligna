@@ -73,7 +73,6 @@ void colisaoParede(Bola* b, Vetori* limhor, Vetori* limver)
 
 void bola_com_bola(Bola* A,Bola* B)
 {
-
     Vetorf eixo,proje_a,proje_b,aux;
     eixo.x =  B->pos.x - A->pos.x;
     eixo.y = B->pos.y - A->pos.y;

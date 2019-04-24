@@ -52,3 +52,18 @@
 	"Vetores.h"
 	<math.h>
 
+1555630430 source:/home/cledson/Desktop/Sinuca_maligna/Vetores.c
+	"Vetores.h"
+	<math.h>
+
+1555630430 /home/cledson/Desktop/Sinuca_maligna/Vetores.h
+
+1555771323 source:/home/cledson/Desktop/Sinuca_maligna/Bola.c
+	"Bola.h"
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+
+1555630430 /home/cledson/Desktop/Sinuca_maligna/Bola.h
+	"Vetores.h"
+

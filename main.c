@@ -93,8 +93,18 @@ int main()
             {
                 if (evento.timer.source == cronometro)
                 {
+                    Bola*  aux;
+                    Bola* aux2;
                     /* OS CALCULOS DE COLISAO E DESLOCAMENTO FICAM AQUI */
-
+                    for(aux = b; aux != NULL; aux = aux->prox)
+                    {
+                        somaVetorf(aux->pos,aux->vel);
+                        colisaoParede(aux,&limhor,&limver);
+                        for(aux2 = aux->prox ; aux2 != NULL ; aux2=aux2->prox)
+                        {
+                            bola_com_bola(aux,aux2);
+                        }
+                    }
                     draw = true;
                 }
             }

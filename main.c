@@ -1,10 +1,8 @@
 #include <allegro5/allegro.h>
 #include <allegro5/allegro_native_dialog.h>
 #include <allegro5/allegro_primitives.h>
-
 #include <stdlib.h>
 #include <stdio.h>
-
 #include "Bola.h"
 
 //bool inicializa(ALLEGRO_DISPLAY* janela, ALLEGRO_EVENT_QUEUE* fila);

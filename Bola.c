@@ -75,14 +75,15 @@ void bola_com_bola(Bola* A,Bola* B)
     Vetorf eixo,proje_a,proje_b,aux;
     eixo.x =  B->pos.x - A->pos.x;
     eixo.y = B->pos.y - A->pos.y;
-    if( (eixo.x <= ( 2*(B->raio) ) ) && (eixo.y <= ( 2*(B->raio) )))
+
+    if( (eixo.x <= 2*B->raio) && (eixo.y <=  2*B->raio) )
     {
-    proje_a = projecao(eixo, &(A->vel));
-    proje_b = projecao(eixo,&(B->vel));
-    ///talvez o erro esteja aqui
-    A->vel=proje_b;
-    B->vel=proje_a;
-    ///
+        proje_a = projecao(eixo, &(A->vel));
+        proje_b = projecao(eixo,&(B->vel));
+        ///talvez o erro esteja aqui
+        A->vel=proje_b;
+        B->vel=proje_a;
+        ///
     }
 
 }

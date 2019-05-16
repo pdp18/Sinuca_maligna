@@ -14,10 +14,16 @@ void somaVetorf(Vetorf* soma, Vetorf* acrescimo)
     soma->y += acrescimo->y;
 }
 
+/*
 float norma(Vetorf* u, Vetorf* v)
 {
     return ( sqrt( pow((u->x - v->x), 2) + pow((u->y - v->y), 2) ) );
+}*/
+float norma(Vetorf* u)
+{
+    return ( sqrt( pow(u->x, 2) + pow((u->y), 2) ) );
 }
+
 
 float  produto_escalar (Vetorf* A, Vetorf* B)
 {
@@ -30,9 +36,15 @@ void multiplicaVetorf(Vetorf* vet, float escalar)
     vet->y*=escalar;
 }
 
-Vetorf projecao(Vetorf eixo, Vetorf* projetado)
+/*Vetorf projecao(Vetorf eixo, Vetorf projetado)
 {
     multiplicaVetorf( &eixo, (produto_escalar(&eixo,projetado)/produto_escalar(&eixo,&eixo)) );
     return(eixo);
 
+}*/
+Vetorf projecao(Vetorf eixo, float norma,Vetorf* projetado)
+{
+    Vetorf novo;
+
+    return(novo);
 }

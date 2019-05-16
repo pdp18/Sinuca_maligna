@@ -12,7 +12,7 @@ Bola* insereBola(Bola* b, float raio, Vetorf* pos, Vetorf* vel)
     copiaVetorf(&(novo->vel), vel);
     novo->prox = b;
 
-  return novo;
+    return novo;
 }
 
 void limpaBolas(Bola* b)
@@ -72,18 +72,29 @@ void colisaoParede(Bola* b, Vetori* limhor, Vetori* limver)
 
 void bola_com_bola(Bola* A,Bola* B)
 {
-    Vetorf eixo,proje_a,proje_b,aux;
-    eixo.x =  B->pos.x - A->pos.x;
-    eixo.y = B->pos.y - A->pos.y;
+    Vetorf eixo,proje_a,proje_b;
+    float distancia_centro =0,norma_vetorial;
 
-    if( (eixo.x <= 2*B->raio) && (eixo.y <=  2*B->raio) )
+    distancia_centro=(A->pos.x-B->pos.x)*(A->pos.x-B->pos.x)+(A->pos.y-B->pos.y)*(A->pos.y-B->pos.y);
+    eixo.x= A->pos.x - B->pos.x;
+    eixo.y= A->pos.y - B->pos.y;
+    norma_vetorial= eixo.x*eixo.x + eixo.y*eixo.y;
+
+    if(sqrt(distancia_centro) <=  A->raio*2)
     {
-        proje_a = projecao(eixo, &(A->vel));
-        proje_b = projecao(eixo,&(B->vel));
-        ///talvez o erro esteja aqui
-        A->vel=proje_b;
-        B->vel=proje_a;
-        ///
+        proje_a.x=((((A->vel.x)*eixo.x)+(A->vel.y*eixo.y))*eixo.x)/norma_vetorial;
+        proje_b.x=(((B->vel.x*eixo.x)+(B->vel.y*eixo.y))*eixo.x)/norma_vetorial;
+        proje_a.y=(((A->vel.x*eixo.x)+(A->vel.y*eixo.y))*eixo.y)/norma_vetorial;
+        proje_b.y=(((B->vel.x*eixo.x)+(B->vel.y*eixo.y))*eixo.y)/norma_vetorial;
+        A->vel.x-=(proje_a.x-proje_b.x);
+        B->vel.x-=(proje_b.x-proje_a.x);
+        A->vel.y-=(proje_a.y-proje_b.y);
+
+        B->vel.y-=(proje_b.y-proje_a.y);
+
     }
+
+    ///
+
 
 }

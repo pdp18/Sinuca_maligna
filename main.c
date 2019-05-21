@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "Bola.h"
+#include <time.h>
 
 //bool inicializa(ALLEGRO_DISPLAY* janela, ALLEGRO_EVENT_QUEUE* fila);
 void menu(Bola* b, Vetori* limhor, Vetori* limver); //Será que é útil?
@@ -15,7 +16,7 @@ int main()
     Vetorf vel, pos;
     Vetori limhor, limver;
     Bola* b = NULL;
-
+    srand(time(NULL));
     limhor.x = 100;
     limhor.y = 1266;
 
@@ -33,8 +34,12 @@ int main()
 
     for (i = 0; i < n_bolas; i++)
     {
-        pos = posicaoAleatoria(raio, &limhor, &limver);
+
+
+        pos.x =rand()%(limhor.y - 2*(int)raio + 1) + (int)raio + limhor.x;
+        pos.y =rand()%(limver.y - 2*(int)raio + 1) +(int) raio + limver.x;
         b = insereBola(b, raio, &pos, &vel);
+        Sleep(1001);
     }
 
     printf("BOLA1 velx: %f | vely: %f\n", b->vel.x, b->vel.y);

@@ -18,9 +18,9 @@ void somaVetorf(Vetorf* soma, Vetorf* acrescimo);
 
 void multiplicaVetorf(Vetorf* vet, float escalar);
 
-float norma(Vetorf* u, Vetorf* v);
+float norma(Vetorf* u);
 
 float  produto_escalar(Vetorf* A, Vetorf* B);
 
-Vetorf projecao(Vetorf eixo, Vetorf* projetado);
+
 
